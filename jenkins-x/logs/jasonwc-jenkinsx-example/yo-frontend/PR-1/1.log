@@ -46,34 +46,19 @@ upserted Pipeline jasonwc-jenkinsx-example-yo-fro-685th-1
 created PipelineRun jasonwc-jenkinsx-example-yo-fro-685th-1
 created PipelineStructure jasonwc-jenkinsx-example-yo-fro-685th-1
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-credential-initializer-kdnlr[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-kdnlr[0m
 {"level":"warn","ts":1567612802.030511,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
 {"level":"info","ts":1567612802.0310833,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-working-dir-initializer-fvh69[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-fvh69[0m
 {"level":"warn","ts":1567612803.0802243,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
 {"level":"info","ts":1567612803.0874178,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/preview\""}
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-place-tools[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-source-jasonwc-jenkinsx-example-yo-fro-6wzgl[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jasonwc-jenkinsx-example-yo-fro-6wzgl[0m
 {"level":"warn","ts":1567612827.1204526,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
 {"level":"info","ts":1567612827.2769353,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/yo-frontend.git @ master in path /workspace/source"}
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-merge[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:a34ce4f3bc60188b0dc7334c9d3fe4d135ec413c,1:23565421d873e4d315cadea6de616d8d1fccfb5b
@@ -84,14 +69,8 @@ DEBUG: ran clean --force -d . in
 DEBUG: ran git merge 23565421d873e4d315cadea6de616d8d1fccfb5b in 
 Merged SHA 23565421d873e4d315cadea6de616d8d1fccfb5b with commit message 'Add setupTests file, so that create-react-app sets up the correct window.env in test' into base branch master
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-npmrc[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
 WARNING: failed to find Secret npm-token in namespace **
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-npm-install[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
 
@@ -129,9 +108,6 @@ added 1435 packages from 685 contributors and audited 903611 packages in 18.802s
 found 0 vulnerabilities
 
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-npm-test[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
 
 > yo-frontend@0.1.0 test /workspace/source
@@ -145,9 +121,6 @@ Tests:       1 passed, 1 total
 Snapshots:   0 total
 Time:        1.484s
 Ran all test suites.
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-container-build[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
 [36mINFO[0m[0000] Downloading base image node:11.13.0          
@@ -267,14 +240,8 @@ Find out more about deployment here:
 2019/09/04 16:02:58 pushed blob: sha256:1ab2bdfe97783562315f98f94c0769b1897a05f7b0395ca1520ebee08666703b
 2019/09/04 16:02:58 000360016411.dkr.ecr.us-west-2.amazonaws.com/jasonwc-jenkinsx-example/yo-frontend:0.0.0-SNAPSHOT-PR-1-1: digest: sha256:c8e8492689a1e7946461e067f7e73ef0ffd8ddd8f4a8d605b238e5099c1411d5 size: 917
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-postbuild-post-build[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-postbuild-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-promote-make-preview[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-make-preview[0m
 sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-1-1/" Chart.yaml
@@ -291,9 +258,6 @@ Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
 Successfully added Helm repository chartmuseum.jenkins-x.io.
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-promote-jx-preview[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-g75mj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-preview[0m
 Creating a preview
