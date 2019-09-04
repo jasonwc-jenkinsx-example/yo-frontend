@@ -1,52 +1,27 @@
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-b28js-2[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-bkt7c[0m
-{"level":"warn","ts":1567613294.7684937,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1567613294.7690792,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Unable to retrieve container logs for docker://54c840fc79a3c63f6b70251cfd39618e2d4bce8b470141f74843c3bbd3469bf9
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-b28js-2[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-5mpvq[0m
-{"level":"warn","ts":1567613295.1660528,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1567613295.1678407,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Unable to retrieve container logs for docker://8e270b74b3f49bc0efe9e75dd3334a5a3900a080059f3eb77f526823ddd0bbbe
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-b28js-2[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+Unable to retrieve container logs for docker://0f8080fe246b3022baa37f41e5018701de0c46675a419f6b97209a96fcb3423a
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-b28js-2[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jasonwc-jenkinsx-example-y-88glj[0m
-{"level":"warn","ts":1567613301.2025735,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1567613301.41303,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/yo-frontend.git @ a34ce4f3bc60188b0dc7334c9d3fe4d135ec413c in path /workspace/source"}
+Unable to retrieve container logs for docker://c56b73e4fa31f59ec2b8fbef36dc77e11ce79ad8124d7a3f75e9cc6e3811d709
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-b28js-2[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:a34ce4f3bc60188b0dc7334c9d3fe4d135ec413c,1:3db8f65ca783a879d689fb52a99fb6e771da91ed
-DEBUG: ran git fetch --unshallow origin 3db8f65ca783a879d689fb52a99fb6e771da91ed: a34ce4f3bc60188b0dc7334c9d3fe4d135ec413c: in 
-DEBUG: ran git checkout master in 
-DEBUG: ran git reset --hard a34ce4f3bc60188b0dc7334c9d3fe4d135ec413c in 
-DEBUG: ran clean --force -d . in 
-DEBUG: ran git merge 3db8f65ca783a879d689fb52a99fb6e771da91ed in 
-Merged SHA 3db8f65ca783a879d689fb52a99fb6e771da91ed with commit message 'Use correct nginx port' into base branch master
-Merged SHA 23565421d873e4d315cadea6de616d8d1fccfb5b with commit message 'Add setupTests file, so that create-react-app sets up the correct window.env in test' into base branch master
+Unable to retrieve container logs for docker://3a546b537ccd086fa5e5ddd3d34958b33ea50d0e31864b1efacad397f9d994da
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-b28js-2[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
-DEBUG: ran git fetch origin 3db8f65ca783a879d689fb52a99fb6e771da91ed: a34ce4f3bc60188b0dc7334c9d3fe4d135ec413c: in 
-DEBUG: Unshallowed git repo in 
-DEBUG: ran git checkout master in 
-DEBUG: ran git reset --hard a34ce4f3bc60188b0dc7334c9d3fe4d135ec413c in 
-DEBUG: ran clean --force -d . in 
-DEBUG: ran git merge 3db8f65ca783a879d689fb52a99fb6e771da91ed in 
-Merged SHA 3db8f65ca783a879d689fb52a99fb6e771da91ed with commit message 'Use correct nginx port' into base branch master
-Merged SHA 23565421d873e4d315cadea6de616d8d1fccfb5b with commit message 'Add setupTests file, so that create-react-app sets up the correct window.env in test' into base branch master
+Unable to retrieve container logs for docker://1daada1fd77bb1093ad7df903143fe45e98f3e9ce63b436ae5c34d41fb50db63
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-b28js-2[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
-Deleting and cloning the Jenkins X versions repo
-Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
-Effective pipeline written to jenkins-x-serverless-jenkins-effective.yml
+Unable to retrieve container logs for docker://4d44af407085ca4eda0576e1b93d713a3bd081c5140b1fbc5cf0e9ae7ae4334c
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-b28js-2[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
-WARNING: failed to find secret kaniko-secret in namespace **: secrets "kaniko-secret" not found
-PipelineActivity for jasonwc-jenkinsx-example-yo-frontend-PR-1-2
-Applying changes 
-upserted PipelineResource jasonwc-jenkinsx-example-yo-fro for the git repository https://github.com/jasonwc-jenkinsx-example/yo-frontend.git
-upserted Task jasonwc-jenkinsx-example-yo-fro-vf7hj-from-build-pack-2
-upserted Pipeline jasonwc-jenkinsx-example-yo-fro-vf7hj-2
-created PipelineRun jasonwc-jenkinsx-example-yo-fro-vf7hj-2
-created PipelineStructure jasonwc-jenkinsx-example-yo-fro-vf7hj-2
+Unable to retrieve container logs for docker://a0b348b8d22f5dae23ceba37a524151de339371a249e1eef06445f503d792453
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-b28js-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-wdtgq[0m
 {"level":"warn","ts":1567613312.6180065,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
