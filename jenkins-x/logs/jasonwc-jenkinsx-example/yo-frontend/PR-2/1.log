@@ -1,0 +1,292 @@
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-ljsdv[0m
+{"level":"warn","ts":1567618949.9685473,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567618949.9691007,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-nqjn4[0m
+{"level":"warn","ts":1567618950.9654315,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1567618950.9664452,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jasonwc-jenkinsx-example-y-bvjms[0m
+{"level":"warn","ts":1567618957.0077426,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567618957.1904454,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/yo-frontend.git @ 8ad7b09ef490b9d953520fb59c6e64ebe73efe54 in path /workspace/source"}
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:8ad7b09ef490b9d953520fb59c6e64ebe73efe54,2:3831bac35ccb2543ad6c4f2b854dc71d0b132503
+DEBUG: ran git fetch --unshallow origin 3831bac35ccb2543ad6c4f2b854dc71d0b132503: 8ad7b09ef490b9d953520fb59c6e64ebe73efe54: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 8ad7b09ef490b9d953520fb59c6e64ebe73efe54 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 3831bac35ccb2543ad6c4f2b854dc71d0b132503 in 
+Merged SHA 3831bac35ccb2543ad6c4f2b854dc71d0b132503 with commit message 'Mount the environment-config to substitute environment variables in the container' into base branch master
+Merged SHA fbd6ca0bf87b3d0096693f4fc22fc7c08ff31089 with commit message 'Add configmap for setting an api_url from values' into base branch master
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+DEBUG: ran git fetch origin 3831bac35ccb2543ad6c4f2b854dc71d0b132503: 8ad7b09ef490b9d953520fb59c6e64ebe73efe54: in 
+DEBUG: Unshallowed git repo in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 8ad7b09ef490b9d953520fb59c6e64ebe73efe54 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 3831bac35ccb2543ad6c4f2b854dc71d0b132503 in 
+Merged SHA 3831bac35ccb2543ad6c4f2b854dc71d0b132503 with commit message 'Mount the environment-config to substitute environment variables in the container' into base branch master
+Merged SHA fbd6ca0bf87b3d0096693f4fc22fc7c08ff31089 with commit message 'Add configmap for setting an api_url from values' into base branch master
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Effective pipeline written to jenkins-x-serverless-jenkins-effective.yml
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+WARNING: failed to find secret kaniko-secret in namespace **: secrets "kaniko-secret" not found
+PipelineActivity for jasonwc-jenkinsx-example-yo-frontend-PR-2-1
+Applying changes 
+upserted PipelineResource jasonwc-jenkinsx-example-yo-fro for the git repository https://github.com/jasonwc-jenkinsx-example/yo-frontend.git
+upserted Task jasonwc-jenkinsx-example-yo-fro-pmbbk-from-build-pack-1
+upserted Pipeline jasonwc-jenkinsx-example-yo-fro-pmbbk-1
+created PipelineRun jasonwc-jenkinsx-example-yo-fro-pmbbk-1
+created PipelineStructure jasonwc-jenkinsx-example-yo-fro-pmbbk-1
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-5mwg9[0m
+{"level":"warn","ts":1567618964.0518446,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567618964.052308,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-5zpdg[0m
+{"level":"warn","ts":1567618965.0134916,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1567618965.0242062,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/preview\""}
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jasonwc-jenkinsx-example-yo-fro-96q4r[0m
+{"level":"warn","ts":1567618972.0450752,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567618972.229253,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/yo-frontend.git @ master in path /workspace/source"}
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:8ad7b09ef490b9d953520fb59c6e64ebe73efe54,2:3831bac35ccb2543ad6c4f2b854dc71d0b132503
+DEBUG: ran git fetch --unshallow origin 3831bac35ccb2543ad6c4f2b854dc71d0b132503: 8ad7b09ef490b9d953520fb59c6e64ebe73efe54: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 8ad7b09ef490b9d953520fb59c6e64ebe73efe54 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 3831bac35ccb2543ad6c4f2b854dc71d0b132503 in 
+Merged SHA 3831bac35ccb2543ad6c4f2b854dc71d0b132503 with commit message 'Mount the environment-config to substitute environment variables in the container' into base branch master
+Merged SHA fbd6ca0bf87b3d0096693f4fc22fc7c08ff31089 with commit message 'Add configmap for setting an api_url from values' into base branch master
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+
+> core-js@2.6.9 postinstall /workspace/source/node_modules/babel-runtime/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@3.1.4 postinstall /workspace/source/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/jest-haste-map/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.0.7 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.0.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1435 packages from 685 contributors and audited 903611 packages in 19.167s
+found 0 vulnerabilities
+
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> yo-frontend@0.1.0 test /workspace/source
+> react-scripts test
+
+PASS src/App.test.js
+  ✓ renders without crashing (21ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.532s
+Ran all test suites.
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image node:11.13.0          
+[36mINFO[0m[0000] Error while retrieving image from cache: getting file info: stat /workspace/sha256:1f435b1a92050b3c4ac6c0485d08a3c322f362589250bb94f350569a3d78ffcf: no such file or directory 
+[36mINFO[0m[0000] Downloading base image node:11.13.0          
+[36mINFO[0m[0000] Using files from context: [/workspace/source/package-lock.json /workspace/source/package.json] 
+[36mINFO[0m[0000] Checking for cached layer 000360016411.dkr.ecr.us-west-2.amazonaws.com/todo/cache:d8ca1e50e43abff900b81f3f2be89a7502629a0b36a953716e2c994b289d4683... 
+[36mINFO[0m[0001] No cached layer found for cmd RUN npm ci --only=production 
+[36mINFO[0m[0001] Unpacking rootfs as cmd RUN npm ci --only=production requires it. 
+[36mINFO[0m[0016] Taking snapshot of full filesystem...        
+[36mINFO[0m[0024] WORKDIR /usr/src/app                         
+[36mINFO[0m[0024] cmd: workdir                                 
+[36mINFO[0m[0024] Changed working directory to /usr/src/app    
+[36mINFO[0m[0024] Creating directory /usr/src/app              
+[36mINFO[0m[0024] Taking snapshot of files...                  
+[36mINFO[0m[0024] Using files from context: [/workspace/source/package-lock.json /workspace/source/package.json] 
+[36mINFO[0m[0024] COPY package*.json ./                        
+[36mINFO[0m[0025] Taking snapshot of files...                  
+[36mINFO[0m[0025] RUN npm ci --only=production                 
+[36mINFO[0m[0025] cmd: /bin/sh                                 
+[36mINFO[0m[0025] args: [-c npm ci --only=production]          
+
+> core-js@2.6.9 postinstall /usr/src/app/node_modules/babel-runtime/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> fsevents@1.2.9 install /usr/src/app/node_modules/chokidar/node_modules/fsevents
+> node install
+
+
+> core-js@3.1.4 postinstall /usr/src/app/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> fsevents@1.2.9 install /usr/src/app/node_modules/jest-haste-map/node_modules/fsevents
+> node install
+
+added 1439 packages in 10.777s
+[36mINFO[0m[0036] Taking snapshot of full filesystem...        
+[36mINFO[0m[0056] Pushing layer 000360016411.dkr.ecr.us-west-2.amazonaws.com/todo/cache:d8ca1e50e43abff900b81f3f2be89a7502629a0b36a953716e2c994b289d4683 to cache now 
+[36mINFO[0m[0056] Using files from context: [/workspace/source] 
+[36mINFO[0m[0057] COPY . ./                                    
+[36mINFO[0m[0058] Taking snapshot of files...                  
+[36mINFO[0m[0059] RUN npm run build                            
+[36mINFO[0m[0059] cmd: /bin/sh                                 
+[36mINFO[0m[0059] args: [-c npm run build]                     
+
+> yo-frontend@0.1.0 build /usr/src/app
+> react-scripts build
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  38.97 KB  build/static/js/2.6289cfb8.chunk.js
+  778 B     build/static/js/runtime~main.6fd3b175.js
+  735 B     build/static/js/main.272778bd.chunk.js
+  287 B     build/static/css/main.507336ad.chunk.css
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://bit.ly/CRA-deploy
+
+[36mINFO[0m[0066] Taking snapshot of full filesystem...        
+[36mINFO[0m[0073] Pushing layer 000360016411.dkr.ecr.us-west-2.amazonaws.com/todo/cache:b98a2386b05d089f8e854c3c99910a2b84ba6ab1faaa80e9f60e5d115ab17a03 to cache now 
+[33mWARN[0m[0074] error uploading layer to cache: failed to push to destination 000360016411.dkr.ecr.us-west-2.amazonaws.com/todo/cache:d8ca1e50e43abff900b81f3f2be89a7502629a0b36a953716e2c994b289d4683: NAME_UNKNOWN: The repository with name 'todo/cache' does not exist in the registry with id '000360016411' 
+[36mINFO[0m[0074] Storing source image from stage 0 at path /kaniko/stages/0 
+[36mINFO[0m[0098] Deleting filesystem...                       
+[36mINFO[0m[0100] Downloading base image nginx                 
+[36mINFO[0m[0100] Error while retrieving image from cache: getting file info: stat /workspace/sha256:099019968725f0fc12c4b69b289a347ae74cc56da0f0ef56e8eb8e0134fc7911: no such file or directory 
+[36mINFO[0m[0100] Downloading base image nginx                 
+[36mINFO[0m[0101] cmd: EXPOSE                                  
+[36mINFO[0m[0101] Adding exposed port: 80/tcp                  
+[36mINFO[0m[0101] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0101] Taking snapshot of full filesystem...        
+[36mINFO[0m[0111] COPY --from=build /usr/src/app/build /usr/share/nginx/html 
+[36mINFO[0m[0111] Taking snapshot of files...                  
+[36mINFO[0m[0111] EXPOSE 80                                    
+[36mINFO[0m[0111] cmd: EXPOSE                                  
+[36mINFO[0m[0111] Adding exposed port: 80/tcp                  
+[36mINFO[0m[0111] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0111] CMD ["nginx", "-g", "daemon off;"]           
+[36mINFO[0m[0111] No files changed in this command, skipping snapshotting. 
+2019/09/04 17:45:09 existing blob: sha256:a17e64cfe253e4f55c326740c8fffd1812a09257d96be959a5db2ecf8624c63f
+2019/09/04 17:45:09 existing blob: sha256:1ab2bdfe97783562315f98f94c0769b1897a05f7b0395ca1520ebee08666703b
+2019/09/04 17:45:09 existing blob: sha256:e1288088c7a8274e84793b282640a49a8b90b8b364ea5d593887ff43ecaff0e0
+2019/09/04 17:45:10 pushed blob: sha256:c850d16069d93128731be99bb6ed3243a5a365c7fe4b3eaee5e4dd795d0ff44a
+2019/09/04 17:45:10 pushed blob: sha256:bed9d77b1114073091d90dcf4fbdb6eead6dbca3e12bb316c2e7ea42e29dc95b
+2019/09/04 17:45:10 000360016411.dkr.ecr.us-west-2.amazonaws.com/jasonwc-jenkinsx-example/yo-frontend:0.0.0-SNAPSHOT-PR-2-1: digest: sha256:807a7b37dd6b2a51556157811ba139f6faa604669cb91428ba3fefd641f8bc59 size: 917
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-postbuild-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-make-preview[0m
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-2-1/" Chart.yaml
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-2-1/" ../*/Chart.yaml
+sed -i -e "s|repository:.*|repository: 000360016411.dkr.ecr.us-west-2.amazonaws.com\/jasonwc-jenkinsx-example\/yo-frontend|" values.yaml
+sed -i -e "s/tag:.*/tag: 0.0.0-SNAPSHOT-PR-2-1/" values.yaml
+echo "  version: 0.0.0-SNAPSHOT-PR-2-1" >> requirements.yaml
+** step helm build
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+Showing logs for build [32mjasonwc-jenkinsx-example-yo-fro-pmbbk-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-preview[0m
+Creating a preview
+Commit author email is empty for: fbd6ca0bf87b3d0096693f4fc22fc7c08ff31089
+Looking for commits in: /workspace/source/
+Commit author email is empty for: 3831bac35ccb2543ad6c4f2b854dc71d0b132503
+Looking for commits in: /workspace/source/
+Found commit author match for: jasonwc with email address: jasonwccodes@gmail.com
+Created environment jasonwc-jenkinsx-example-yo-frontend-pr-2
+Namespace **-jasonwc-jenkinsx-example-yo-frontend-pr-2 created 
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: jenkins-x-example.dev.launch.adobe.net
+    exposer: Ingress
+    http: "true"
+preview:
+  image:
+    repository: 000360016411.dkr.ecr.us-west-2.amazonaws.com/jasonwc-jenkinsx-example/yo-frontend
+    tag: 0.0.0-SNAPSHOT-PR-2-1
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+
+
+Updating PipelineActivities jasonwc-jenkinsx-example-yo-frontend-pr-2-1 which has status Running
+WARNING: preview application http://yo-frontend.**-jasonwc-jenkinsx-example-yo-frontend-pr-2.jenkins-x-example.dev.launch.adobe.net not available, error was 503 503 Service Temporarily Unavailable, delaying for: 658.328277ms
+Preview application is now available at: http://yo-frontend.**-jasonwc-jenkinsx-example-yo-frontend-pr-2.jenkins-x-example.dev.launch.adobe.net
