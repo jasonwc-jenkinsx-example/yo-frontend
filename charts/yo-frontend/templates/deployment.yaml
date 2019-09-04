@@ -47,5 +47,16 @@ spec:
           timeoutSeconds: {{ .Values.readinessProbe.timeoutSeconds }}
         resources:
 {{ toYaml .Values.resources | indent 12 }}
+        # Mount the generated config.js file for setting window.env in the
+        # application
+        volumeMounts:
+          - name: environment-volume
+            mountPath: /usr/share/nginx/html/config.js
+            subPath: config.js
+      volumes:
+        - name: environment-volume
+          configMap:
+            name: environment-config
       terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
 {{- end }}
+

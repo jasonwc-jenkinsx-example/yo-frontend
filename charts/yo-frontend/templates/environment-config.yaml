@@ -1,0 +1,9 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: environment-config
+data:
+  config.js: |
+    window.env = {}
+    window.env.API_URL='{{ .Values.env.api_url }}'
