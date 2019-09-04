@@ -51,8 +51,8 @@ spec:
         # application
         volumeMounts:
           - name: environment-volume
-            mountPath: /usr/share/nginx/html/public/config.js
-            subPath: config.jx
+            mountPath: /usr/share/nginx/html/config.js
+            subPath: config.js
       volumes:
         - name: environment-volume
           configMap:
