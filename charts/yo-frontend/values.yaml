@@ -9,8 +9,6 @@ image:
 
 # define environment variables here as a map of key: value
 env:
-  api_url: "default.api.url"
-
 # enable this flag to use knative serve to deploy the app
 knativeDeploy: false
 
