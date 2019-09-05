@@ -24,6 +24,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Yo Frontend</h1>
+        <p>Make calls to the backend</p>
         <p> Connected to { settings.API_URL }</p>
         <div>
           <button onClick={this.onClickHandler}>Say "Yo"</button>
