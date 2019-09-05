@@ -6,4 +6,5 @@ metadata:
 data:
   config.js: |
     window.env = {}
-    window.env.API_URL='{{ .Values.env.api_url }}'
+    window.env.API_URL='{{ (default (print "yo-backend." .Release.Namespace ".jenkins-x-example.dev.launch.adobe.net")) .Values.api_url }}'
+
