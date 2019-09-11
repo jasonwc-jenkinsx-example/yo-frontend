@@ -26,6 +26,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Yo Frontend</h1>
+        <p>Super cool</p>
         <p> Connected to { settings.API_URL }</p>
         <div>
           <button onClick={this.onYoClickHandler}>Say "Yo"</button>
