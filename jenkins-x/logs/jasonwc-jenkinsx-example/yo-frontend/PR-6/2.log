@@ -1,0 +1,171 @@
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-fhf5m[0m
+{"level":"warn","ts":1568234095.1882622,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568234095.1885827,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-fngxm[0m
+{"level":"warn","ts":1568234096.4120283,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568234096.413316,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jasonwc-jenkinsx-example-y-976p6[0m
+{"level":"warn","ts":1568234101.437565,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568234101.6036046,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/yo-frontend.git @ fa5d45907b9d6e0d7eeb2a23cc29e083d8e9ad9f in path /workspace/source"}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:fa5d45907b9d6e0d7eeb2a23cc29e083d8e9ad9f,6:8297afd758d7198542cdbe9c3e1b5c5ae3356fd5
+DEBUG: ran git fetch --unshallow origin 8297afd758d7198542cdbe9c3e1b5c5ae3356fd5: fa5d45907b9d6e0d7eeb2a23cc29e083d8e9ad9f: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard fa5d45907b9d6e0d7eeb2a23cc29e083d8e9ad9f in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 8297afd758d7198542cdbe9c3e1b5c5ae3356fd5 in 
+Merged SHA 8297afd758d7198542cdbe9c3e1b5c5ae3356fd5 with commit message 'Support hello endpoint' into base branch master
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+DEBUG: ran git fetch origin 8297afd758d7198542cdbe9c3e1b5c5ae3356fd5: fa5d45907b9d6e0d7eeb2a23cc29e083d8e9ad9f: in 
+DEBUG: Unshallowed git repo in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard fa5d45907b9d6e0d7eeb2a23cc29e083d8e9ad9f in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 8297afd758d7198542cdbe9c3e1b5c5ae3356fd5 in 
+Merged SHA 8297afd758d7198542cdbe9c3e1b5c5ae3356fd5 with commit message 'Support hello endpoint' into base branch master
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Effective pipeline written to jenkins-x-serverless-jenkins-effective.yml
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+WARNING: failed to find secret kaniko-secret in namespace **: secrets "kaniko-secret" not found
+PipelineActivity for jasonwc-jenkinsx-example-yo-frontend-PR-6-2
+Applying changes 
+upserted PipelineResource jasonwc-jenkinsx-example-yo-fro for the git repository https://github.com/jasonwc-jenkinsx-example/yo-frontend.git
+upserted Task jasonwc-jenkinsx-example-yo-fro-b66xj-from-build-pack-2
+upserted Pipeline jasonwc-jenkinsx-example-yo-fro-b66xj-2
+created PipelineRun jasonwc-jenkinsx-example-yo-fro-b66xj-2
+created PipelineStructure jasonwc-jenkinsx-example-yo-fro-b66xj-2
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-credential-initializer-kdtbz[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-kdtbz[0m
+{"level":"warn","ts":1568234109.9593904,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568234109.9597187,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-working-dir-initializer-sfrj2[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-sfrj2[0m
+{"level":"warn","ts":1568234110.9199898,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568234110.9210331,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/preview\""}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-place-tools[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-source-jasonwc-jenkinsx-example-yo-fro-n8l2v[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jasonwc-jenkinsx-example-yo-fro-n8l2v[0m
+{"level":"warn","ts":1568234116.9739354,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568234117.1334116,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/yo-frontend.git @ master in path /workspace/source"}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-merge[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:fa5d45907b9d6e0d7eeb2a23cc29e083d8e9ad9f,6:8297afd758d7198542cdbe9c3e1b5c5ae3356fd5
+DEBUG: ran git fetch --unshallow origin 8297afd758d7198542cdbe9c3e1b5c5ae3356fd5: fa5d45907b9d6e0d7eeb2a23cc29e083d8e9ad9f: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard fa5d45907b9d6e0d7eeb2a23cc29e083d8e9ad9f in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 8297afd758d7198542cdbe9c3e1b5c5ae3356fd5 in 
+Merged SHA 8297afd758d7198542cdbe9c3e1b5c5ae3356fd5 with commit message 'Support hello endpoint' into base branch master
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-npmrc[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+WARNING: failed to find Secret npm-token in namespace **
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-npm-install[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+
+> core-js@2.6.9 postinstall /workspace/source/node_modules/babel-runtime/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@3.1.4 postinstall /workspace/source/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/jest-haste-map/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.0.7 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.0.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1435 packages from 685 contributors and audited 903611 packages in 18.899s
+found 0 vulnerabilities
+
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-npm-test[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-qvv6r-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> yo-frontend@0.1.0 test /workspace/source
+> react-scripts test
+
+FAIL src/App.test.js
+  ● Test suite failed to run
+
+    SyntaxError: /workspace/source/src/App.js: Unterminated JSX contents (54:12)
+
+      52 |             <p>{ response }</p>
+      53 |           ))}
+    > 54 |       </div>
+         |             ^
+      55 |     );
+      56 |   }
+      57 | }
+
+      at Object.raise (node_modules/@babel/parser/lib/index.js:6325:17)
+      at Object.jsxReadToken (node_modules/@babel/parser/lib/index.js:3232:14)
+      at Object.getTokenFromCode (node_modules/@babel/parser/lib/index.js:3610:19)
+      at Object.getTokenFromCode (node_modules/@babel/parser/lib/index.js:2308:20)
+      at Object.nextToken (node_modules/@babel/parser/lib/index.js:6525:12)
+      at Object.next (node_modules/@babel/parser/lib/index.js:6465:10)
+      at Object.eat (node_modules/@babel/parser/lib/index.js:6470:12)
+      at Object.expect (node_modules/@babel/parser/lib/index.js:7628:10)
+      at Object.jsxParseClosingElementAt (node_modules/@babel/parser/lib/index.js:3508:10)
+      at Object.jsxParseElementAt (node_modules/@babel/parser/lib/index.js:3527:37)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        1.451s
+Ran all test suites.
+npm ERR! Test failed.  See above for more details.
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-npm-test'. The execution of the pipeline has stopped.[0m
