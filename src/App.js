@@ -16,7 +16,7 @@ class App extends React.Component {
       .then(
         (result) => {
           this.setState(
-            { yo_responses: this.state.responses.concat(result.message) }
+            { yo_responses: this.state.yo_responses.concat(result.message) }
           );
         }
       );
