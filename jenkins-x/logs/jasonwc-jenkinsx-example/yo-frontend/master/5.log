@@ -1,47 +1,27 @@
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-6t79t[0m
-{"level":"warn","ts":1568231660.962479,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1568231660.9631827,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Unable to retrieve container logs for docker://c0c8978a340034f620644789097d8a43e314958c0bb4225c28523a00debba2e4
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-fxlgk[0m
-{"level":"warn","ts":1568231661.923463,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1568231661.9253974,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Unable to retrieve container logs for docker://a7280cdabb37ba154bb82646d13249d4a6499d62e4a48f55516a04f98408fd25
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+Unable to retrieve container logs for docker://056f129182920e6d2cde9c98f47c4751b9f928e539148b5603ad5ccf57f51096
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jasonwc-jenkinsx-example-y-fqjdg[0m
-{"level":"warn","ts":1568231667.9948575,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1568231668.205406,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/yo-frontend.git @ 1e05e5052c0e75e19cdcfea04307f10bbaf51f8b in path /workspace/source"}
+Unable to retrieve container logs for docker://702de633e0b1daecb8178debc42a673066068b66a76b2088040fb8cbf3f3741d
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:1e05e5052c0e75e19cdcfea04307f10bbaf51f8b
-WARNING: no SHAs to merge, falling back to initial cloned commit
+Unable to retrieve container logs for docker://a42707580e67eb929d04aeec8149b1ae00917ff44e5f5b4b07f0737c2941f9fc
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
-SKIP merge-pull-refs: Nothing to merge
+Unable to retrieve container logs for docker://fe2278fd4f877264b82b428d5f0fc8f00a26e10f28a4825c61b213068450be56
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
-Deleting and cloning the Jenkins X versions repo
-Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
-Effective pipeline written to jenkins-x-release-effective.yml
+Unable to retrieve container logs for docker://bc41a7a1c57482d98632d4a8b655bd46daac8a13f4bc388d09ef289b668acae0
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
-running command: echo \$(**-release-version) > VERSION
-
-running command: ** step tag --version \$(cat VERSION)
-Updating chart version in charts/yo-frontend/Chart.yaml to 0.0.5
-Updating repository in charts/yo-frontend/values.yaml to 000360016411.dkr.ecr.us-west-2.amazonaws.com/jasonwc-jenkinsx-example/yo-frontend
-Updating tag in charts/yo-frontend/values.yaml to 0.0.5
-Tag v0.0.5 created and pushed to remote origin
-
-WARNING: failed to find secret kaniko-secret in namespace **: secrets "kaniko-secret" not found
-PipelineActivity for jasonwc-jenkinsx-example-yo-frontend-master-5
-Applying changes 
-upserted PipelineResource jasonwc-jenkinsx-example-yo-fro for the git repository https://github.com/jasonwc-jenkinsx-example/yo-frontend.git
-upserted Task jasonwc-jenkinsx-example-yo-fro-l8n66-from-build-pack-5
-upserted Pipeline jasonwc-jenkinsx-example-yo-fro-l8n66-5
-created PipelineRun jasonwc-jenkinsx-example-yo-fro-l8n66-5
-created PipelineStructure jasonwc-jenkinsx-example-yo-fro-l8n66-5
+Unable to retrieve container logs for docker://c87b0a8f2adcf8cd1e24605a1f9a851861781b34a76894546ace235be93b8fb4
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-kbrh7[0m
 {"level":"warn","ts":1568231677.271888,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
@@ -51,39 +31,21 @@ Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [
 {"level":"warn","ts":1568231677.559646,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
 {"level":"info","ts":1568231677.560975,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/yo-frontend\""}
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-place-tools[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-source-jasonwc-jenkinsx-example-yo-fro-drz88[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jasonwc-jenkinsx-example-yo-fro-drz88[0m
 {"level":"warn","ts":1568231698.643937,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
 {"level":"info","ts":1568231698.8308144,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/yo-frontend.git @ v0.0.5 in path /workspace/source"}
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-merge[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:1e05e5052c0e75e19cdcfea04307f10bbaf51f8b
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-setup-jx-git-credentials[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-npmrc[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
 WARNING: failed to find Secret npm-token in namespace **
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-npm-install[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
 
@@ -121,9 +83,6 @@ added 1435 packages from 685 contributors and audited 903611 packages in 20.444s
 found 0 vulnerabilities
 
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-npm-test[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
 
 > yo-frontend@0.1.0 test /workspace/source
@@ -137,9 +96,6 @@ Tests:       1 passed, 1 total
 Snapshots:   0 total
 Time:        1.886s
 Ran all test suites.
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-container-build[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
 [36mINFO[0m[0000] Downloading base image node:11.13.0          
@@ -259,14 +215,8 @@ Find out more about deployment here:
 2019/09/11 19:57:26 pushed blob: sha256:346ac52969db8c0ca770017cf4222067b68032d1fb5ec4ed9fdcd4f68da50ec9
 2019/09/11 19:57:26 000360016411.dkr.ecr.us-west-2.amazonaws.com/jasonwc-jenkinsx-example/yo-frontend:0.0.5: digest: sha256:095cad2e4b66d2d9d05640a226f7954522d6c2ef1a525e52f802f20e0cca5ef2 size: 917
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-post-build[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-promote-changelog[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
 Converted /workspace/source/charts/yo-frontend to an unshallow repository
@@ -285,9 +235,6 @@ Created Release yo-frontend-0-0-5 resource in namespace **
 Updating PipelineActivity jasonwc-jenkinsx-example-yo-frontend-master-5 with version 0.0.5
 Updated PipelineActivities jasonwc-jenkinsx-example-yo-frontend-master-5 with release notes URL: https://github.com/jasonwc-jenkinsx-example/yo-frontend/releases/tag/v0.0.5
 
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-promote-helm-release[0m to start...
-
-
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
@@ -297,9 +244,6 @@ Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 Uploading chart file yo-frontend-0.0.5.tgz to http://jenkins-x-chartmuseum:8080/api/charts
 Received 201 response: {"saved":true}
-
-waiting for stage [32mfrom-build-pack[0m : container [32mstep-promote-jx-promote[0m to start...
-
 
 Showing logs for build [32mmeta-jasonwc-jenkinsx-example-y-z62sn-5[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
 WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
