@@ -51,6 +51,7 @@ class App extends React.Component {
           { this.state.hello_responses.map(response => (
             <p>{ response }</p>
           ))}
+        </div>
       </div>
     );
   }
