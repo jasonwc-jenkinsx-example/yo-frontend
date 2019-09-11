@@ -6,7 +6,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      yo_responses: []
+      yo_responses: [],
+      hello_responses: []
     };
   }
 
@@ -17,6 +18,18 @@ class App extends React.Component {
         (result) => {
           this.setState(
             { yo_responses: this.state.yo_responses.concat(result.message) }
+          );
+        }
+      );
+  }
+
+  onHelloClickHandler = () => {
+    fetch(`${settings.API_URL}/api/v1/hello`)
+      .then(res => res.json())
+      .then(
+        (result) => {
+          this.setState(
+            { hello_responses: this.state.hello_responses.concat(result.message) }
           );
         }
       );
@@ -33,6 +46,11 @@ class App extends React.Component {
             <p>{ response }</p>
           ))}
         </div>
+        <div>
+          <button onClick={this.onHelloClickHandler}>Say "Hello"</button>
+          { this.state.hello_responses.map(response => (
+            <p>{ response }</p>
+          ))}
       </div>
     );
   }
