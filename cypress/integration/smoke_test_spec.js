@@ -1,3 +1,4 @@
+// Example Cypress test
 describe('smoke tests', function() {
   it('has the correct header', function() {
     cy.visit(Cypress.env('application_url'));
