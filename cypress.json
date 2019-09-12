@@ -1,1 +1,7 @@
-{}
+{
+  "_comment": "env keys for running cypress locally. Values are overridden by cypress.env.json in other environments",
+  "env": {
+     "application_url": "http://localhost:3000"
+  }
+}
+
