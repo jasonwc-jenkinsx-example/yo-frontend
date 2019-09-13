@@ -5,4 +5,6 @@ pipelineConfig:
       promote:
         steps:
         - command: env
+        - command: ls
+        - command: sh script/ci/generate_cypress_env.sh
         - command: npm run cypress:run
