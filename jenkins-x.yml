@@ -4,4 +4,5 @@ pipelineConfig:
     pullRequest:
       promote:
         steps:
+        - command: env
         - command: npm run cypress:run
