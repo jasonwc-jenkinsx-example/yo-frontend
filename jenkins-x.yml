@@ -4,7 +4,7 @@ pipelineConfig:
     pullRequest:
       promote:
         steps:
-        - command: env
-        - command: ls
         - command: sh scripts/ci/generate_cypress_env.sh
+          name: setup-cypress
         - command: npm run cypress:run
+          name: cypress-e2e-tests

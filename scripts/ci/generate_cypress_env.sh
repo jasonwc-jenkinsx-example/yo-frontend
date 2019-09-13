@@ -1,5 +1,5 @@
 # !/bin/bash
-# Ouputs a cypress.env.json for generating the cypress configuration for a
+# Outputs a cypress.env.json for generating the cypress configuration for a
 # preview environment
 
 PREVIEW_NAMESPACE="$(echo $JOB_NAME | tr / - | tr '[:upper:]' '[:lower:]')"
