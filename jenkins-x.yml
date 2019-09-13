@@ -1,1 +1,7 @@
 buildPack: javascript
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      promote:
+        steps:
+        - command: npm run cypress:run
